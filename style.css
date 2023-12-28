@@ -1,0 +1,125 @@
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-family: 'Norse', sans-serif;
+    margin: 0;
+    font-size: 45px; /* Increased by 50% */
+}
+
+.title.main-title {
+    font-size: 75px; /* Increased by 50% */
+}
+
+.logo {
+    width: auto;
+    height: 100px;
+}
+
+img {
+    max-width: 100%;
+    display: block; /* Add this line */
+    margin: 0 auto; /* Add this line */
+}
+
+body {
+    font-family: 'Norse', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    font-size: 24px; /* Increased by 50% */
+}
+
+.container-page {
+    padding: 20px;
+    margin: 20px;
+}
+
+.description,
+.subtitle,
+ul,
+ol {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    font-size: 27px; /* Increased by 50% */
+}
+
+p,
+li,
+h2 {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 24px; /* Increased by 50% */
+}
+
+.list {
+    font-size: 36px; /* Increased by 50% */
+}
+
+.list li {
+    margin-bottom: 10px; /* Optional: Add spacing between list items */
+}
+
+.list a {
+    text-decoration: none;
+    color: #333;
+}
+
+.list a:hover {
+    text-decoration: underline;
+}
+
+.subtitle {
+    color: #333;
+    font-size: 30px; /* Increased by 50% */
+}
+
+ul, ol {
+    margin-top: 0;
+}
+
+.return-page {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 18px;
+    font-size: 24px;
+    background-color: #808080; /* Grey color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.return-page:hover {
+    background-color: #696969; /* Darker grey on hover */
+}
+
+footer {
+    margin: 50px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-references {
+    margin-bottom: 5px; /* Reduced margin below the references */
+}
+
+.footer-socials {
+    margin-top: 5px; /* Reduced top margin */
+    margin-bottom: 5px; /* Reduced bottom margin */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-socials a {
+    margin-right: 10px; /* Slightly reduced right margin */
+}

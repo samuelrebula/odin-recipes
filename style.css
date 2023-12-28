@@ -123,3 +123,61 @@ footer {
 .footer-socials a {
     margin-right: 10px; /* Slightly reduced right margin */
 }
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    .title,
+    .title.main-title {
+        font-size: 36px; /* Adjust the font size for smaller screens */
+    }
+
+    .logo {
+        height: 80px; /* Adjust the height of the logo for smaller screens */
+    }
+
+    body {
+        font-size: 18px; /* Adjust the body font size for smaller screens */
+    }
+
+    .container-page {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .description,
+    .subtitle,
+    ul,
+    ol {
+        font-size: 20px; /* Adjust the font size for smaller screens */
+    }
+
+    p,
+    li,
+    h2 {
+        font-size: 18px; /* Adjust the font size for smaller screens */
+    }
+
+    .list {
+        font-size: 28px; /* Adjust the font size for smaller screens */
+    }
+
+    .return-page {
+        font-size: 18px; /* Adjust the font size for smaller screens */
+    }
+
+    .subtitle {
+        font-size: 24px; /* Adjust the font size for smaller screens */
+    }
+
+    .footer {
+        margin: 20px 0;
+    }
+
+    .footer-references,
+    .footer-socials a {
+        font-size: 16px; /* Adjust the font size for smaller screens */
+    }
+}

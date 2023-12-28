@@ -1,3 +1,3 @@
 # odin-recipes
 
-The Odin project assignment for training HTML and CSS.
+The Odin Project assignment for training HTML and CSS.

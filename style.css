@@ -21,9 +21,19 @@ header {
 }
 
 img {
+    width: auto;
+    height: 450px;
     max-width: 100%;
     display: block; /* Add this line */
     margin: 0 auto; /* Add this line */
+}
+
+img.center-image {
+    margin: 0; /* Remove margin for the specific image */
+    width: auto;
+    height: 300px; 
+    margin: 0; 
+    object-fit: cover; 
 }
 
 body {
@@ -57,16 +67,30 @@ h2 {
 }
 
 .list {
+    display: flex;
+    justify-content: space-between;
     font-size: 36px; /* Increased by 50% */
+    list-style: none; /* Remove bullet points from the list */
 }
 
 .list li {
-    margin-bottom: 10px; /* Optional: Add spacing between list items */
+    flex: 0 0 calc(33.33% - 20px); /* Adjust the percentage and spacing as needed */
+    margin: 0 10px; /* Equal margin on left and right */
+    box-sizing: border-box;
+    position: relative;
 }
 
 .list a {
     text-decoration: none;
     color: #333;
+    display: block;
+}
+
+.list img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
 }
 
 .list a:hover {

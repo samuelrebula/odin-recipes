@@ -1,3 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Norse', sans-serif;
+    line-height: 1.6;
+    font-size: 24px;
+}
+
 header {
     text-align: center;
     padding: 20px;
@@ -8,11 +22,11 @@ header {
 .title {
     font-family: 'Norse', sans-serif;
     margin: 0;
-    font-size: 45px; /* Increased by 50% */
+    font-size: 45px;
 }
 
 .title.main-title {
-    font-size: 75px; /* Increased by 50% */
+    font-size: 75px;
 }
 
 .logo {
@@ -24,27 +38,12 @@ img {
     width: auto;
     height: 450px;
     max-width: 100%;
-    display: block; /* Add this line */
-    margin: 0 auto; /* Add this line */
-}
-
-img.center-image {
-    margin: 0; /* Remove margin for the specific image */
-    width: auto;
-    height: 300px; 
-    margin: 0; 
-    object-fit: cover; 
-}
-
-body {
-    font-family: 'Norse', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    font-size: 24px; /* Increased by 50% */
+    display: block;
+    margin: 0 auto;
 }
 
 .container-page {
+    flex: 1;
     padding: 20px;
     margin: 20px;
 }
@@ -55,7 +54,7 @@ ul,
 ol {
     margin-bottom: 15px;
     padding-bottom: 15px;
-    font-size: 27px; /* Increased by 50% */
+    font-size: 27px;
 }
 
 p,
@@ -63,19 +62,19 @@ li,
 h2 {
     margin-bottom: 10px;
     padding-bottom: 10px;
-    font-size: 24px; /* Increased by 50% */
+    font-size: 24px;
 }
 
 .list {
     display: flex;
     justify-content: space-between;
-    font-size: 36px; /* Increased by 50% */
-    list-style: none; /* Remove bullet points from the list */
+    font-size: 36px;
+    list-style: none;
 }
 
 .list li {
-    flex: 0 0 calc(33.33% - 20px); /* Adjust the percentage and spacing as needed */
-    margin: 0 10px; /* Equal margin on left and right */
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 0 10px;
     box-sizing: border-box;
     position: relative;
 }
@@ -99,7 +98,7 @@ h2 {
 
 .subtitle {
     color: #333;
-    font-size: 30px; /* Increased by 50% */
+    font-size: 30px;
 }
 
 ul, ol {
@@ -113,7 +112,7 @@ ul, ol {
     text-decoration: none;
     padding: 12px 18px;
     font-size: 24px;
-    background-color: #808080; /* Grey color */
+    background-color: #808080;
     color: white;
     border: none;
     border-radius: 5px;
@@ -121,31 +120,7 @@ ul, ol {
 }
 
 .return-page:hover {
-    background-color: #696969; /* Darker grey on hover */
-}
-
-footer {
-    margin: 50px 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.footer-references {
-    margin-bottom: 5px; /* Reduced margin below the references */
-}
-
-.footer-socials {
-    margin-top: 5px; /* Reduced top margin */
-    margin-bottom: 5px; /* Reduced bottom margin */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer-socials a {
-    margin-right: 10px; /* Slightly reduced right margin */
+    background-color: #696969;
 }
 
 @media only screen and (max-width: 768px) {
@@ -155,15 +130,15 @@ footer {
 
     .title,
     .title.main-title {
-        font-size: 36px; /* Adjust the font size for smaller screens */
+        font-size: 36px;
     }
 
     .logo {
-        height: 80px; /* Adjust the height of the logo for smaller screens */
+        height: 80px;
     }
 
     body {
-        font-size: 18px; /* Adjust the body font size for smaller screens */
+        font-size: 18px;
     }
 
     .container-page {
@@ -175,25 +150,25 @@ footer {
     .subtitle,
     ul,
     ol {
-        font-size: 20px; /* Adjust the font size for smaller screens */
+        font-size: 20px;
     }
 
     p,
     li,
     h2 {
-        font-size: 18px; /* Adjust the font size for smaller screens */
+        font-size: 18px;
     }
 
     .list {
-        font-size: 28px; /* Adjust the font size for smaller screens */
+        font-size: 28px;
     }
 
     .return-page {
-        font-size: 18px; /* Adjust the font size for smaller screens */
+        font-size: 18px;
     }
 
     .subtitle {
-        font-size: 24px; /* Adjust the font size for smaller screens */
+        font-size: 24px;
     }
 
     .footer {
@@ -202,6 +177,40 @@ footer {
 
     .footer-references,
     .footer-socials a {
-        font-size: 16px; /* Adjust the font size for smaller screens */
+        font-size: 16px;
     }
+}
+
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.footer-references {
+    margin-bottom: 5px;
+}
+
+.footer-socials {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-socials a {
+    margin-right: 10px;
+}
+
+.footer a {
+    color: black;
+    font-size: 40px;
+}
+
+.footer a:hover {
+    text-decoration: none;
 }
